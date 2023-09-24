@@ -1,0 +1,54 @@
+GET http://localhost:3000/api/contact
+
+###
+POST http://localhost:3000/api/contact
+Content-Type: application/json 
+
+{
+  "userId"     : 40,
+  "first_name" : "Carl Andrew",
+  "last_name"  : "Soroysoroy",
+  "email"      : "carl",
+  "phone"      : "dsd",
+  "address"    : "Aclan"
+}
+###
+PUT http://localhost:3000/api/contact/26
+Content-Type: application/json 
+
+{
+  "userId"     : 27,
+  "first_name" : "Luffy",
+  "last_name"  : "Piol",
+  "email"      : "carl",
+  "phone"      : "123awdaw45",
+  "address"    : "Aclan"
+}
+
+###
+DELETE http://localhost:3000/api/contact/26
+###
+GET http://localhost:3000/api/auth
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username"   : "luffy",
+  "first_name" : "luffy",
+  "last_name"  : "luffy",
+  "password"   : "luffy",
+  "email"      : "luffy",
+  "address"    : "luffy"
+}
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username"   : "luffy",
+  "password"   : "luffy"
+}
+###
+DELETE  http://localhost:3000/api/auth/logout
+Content-Type: application/json
